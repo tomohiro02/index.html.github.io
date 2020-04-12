@@ -1,0 +1,437 @@
+/*htmlファイルとリンクする*/
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc; 
+  color: #333333;
+  font-size: 15px; /*既定値より小さい*/
+  line-height: 2; /*行間の高さ*/
+  
+}
+
+p,h1,h2,h3,h4,h5,h6 { /* デフォルトで独自の設定がされているから一度リセットする*/
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom; /* 画像の下部の余白をなくす */
+}
+
+ul { 
+  margin: 0;  /* リストの項目の余白を消す */
+  padding: 0;  /* リストの項目の余白を消す */
+}
+
+a { /* 通常のリストの項目の文字の色 */
+  color: #3583aa;
+  text-decoration: none; /* リンク文字の下線を非表示 */
+}
+
+a:visited {
+  color: #788d98;
+}
+
+a:hover {  /* マウスポイントを置いた状態を意味します */
+  color: #788d98;
+  text-decoration: underline; /* リンク文字の下線を表示 */
+}
+
+header {
+  width: 960px; /* 横幅 */
+  height: 100px; /* 高さ */
+  margin: 0 auto; /* headerを左右均等にする */
+}
+
+.logo { 
+  float: left; 
+  margin-top: 50px;
+  float: left;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 50px;
+  float: right;
+}
+
+.global-nav li {
+  float: left;
+  margin: 0 20px; /* 上下の外側の余白0, 左右の外側の余白20px */
+  font-size: 20px;
+  list-style: none; /* ・を消す */
+  color: #ffffff;
+  font-family: 'Bitter', serif;
+}
+
+.global-nav li a {
+  color: #ffffff;
+} 
+
+.global-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+} 
+
+#wrap {
+  clear: both;
+  background-color: #fffaf0;
+  margin-top: 220px;
+  padding: 35px px;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center; /* 中央揃えにする */
+  color: #ffffff;
+  padding: 20px 0;
+  background-color: #767671;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+
+#index h1 {
+  font-size: 100px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: 'Bitter', serif;
+  margin-bottom: 50px;
+  border: none;  /* h1でかけたボーダーをここだけ解除する */
+}
+
+#index .content {
+  margin-top: 150px;
+}
+
+#index p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.btn a {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+  width: 185px;
+  display: block; /*　インライン要素（a、img、apan）は高さや幅の指定ができないから、display:blockで解除してあげる */
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 3px solid #009cd3; /* マウスを置いたときに色を反転させるための準備 */
+}
+
+.btn a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+}
+
+#index footer {
+  width: 960px;
+  margin: 150px auto 0 auto; /* 中央に寄せる、１つにまとめる */
+  text-align: left; /* インライン要素やインラインブロック要素はtext-align */
+  background-color: transparent;
+}
+
+#index {
+  background-image: url(../images/d3fd089032394f2c26fcce6da9c09b86_093b34ea2995bd54a20025990e912954.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#about {
+  background-image: url(../images/bg-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+.main-center {
+  width: 940px; 
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 24px;
+}
+
+.icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+
+#about .profile-txt {
+  width: 540px;
+  float: left;
+}
+
+#about .profile-image {
+  float: right;
+}
+
+.clearfix:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+#about .career th {
+  width: 240px;
+  background-color: #f0f0f0;
+  padding: 12px 0;
+  border: 1px solid #cccccc;
+}
+
+#about .career td {
+  width:660px;
+  padding: 12px 40px;
+  border: 1px solid #cccccc;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#index #wrap {
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+}
+
+
+.culee-logo {
+  width: 80px;
+  height: 80px;
+}
+
+#portfolio {
+  background-image: url(../images/bg-portfolio.jpg);
+/*本には書いてあったがおかしい、消したら上手くいった。
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+*/
+}
+
+
+.main {
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+
+.sidebar {
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  font-family: 'Bitter', serif;
+}
+
+a img:hover {
+  opacity: 0.8;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+  
+}
+
+.sidebar li {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.sidebar ul a {
+  color: #333333;
+}
+
+#photograph {
+  background-image: url(../images/bg-photograph.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#photograph .photograph-list li {
+  float: left;
+  list-style: none;
+  margin: 0 20px 15px 0;
+}
+
+#photograph .photograph-list li:nth-last-child(3n) {
+  margin-right: 0;
+}
+
+#video {
+  background-image: url(../images/bg-video.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+.main {
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+
+.sidebar {
+  width: 200px;
+  margin: 20px 10px 0 30px;
+  float: right;
+  font-family: 'Bitter', serif;
+}
+
+a img:hover {
+  opacity: 0.8;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.sidebar ul a {
+  color: #333333;
+}
+
+#contact {
+  background-image: url(../images/bg-contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#contact .access table {
+  float: left;
+}
+
+#contact .access th,
+#contact .access td {
+  text-align: left;
+  vertical-align: top;
+  line-height: 2.5;
+}
+
+#contact .access td {
+  padding-left: 30px;
+}
+
+#contact .access iframe {
+  width: 460px;
+  float: right;
+}
+
+#contact .form {
+  background-color: #eaeaea;
+  padding: 30px 50px;
+}
+
+#contact .form dl dt {
+  width: 165px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+
+#contact .form dl dd {
+  padding: 10px 0;
+}
+
+#contact .form .name {
+  width: 240px;
+  height: 30px;
+}
+
+#contact .form .email {
+  width: 300px;
+  height: 30px;
+}
+
+#contact .form .tel {
+  width: 240px;
+  height: 30px;
+}
+
+#contact .form .type {
+  width: 180px;
+  height: 30px;
+}
+
+#contact .form .message {
+  width: 660px;
+  height: 150px;
+}
+
+#contact .form button {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  width: 120px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+  margin-left: 165px;
+}
+
+#contact .form button:hover {
+  background-color: #ffffff;
+  color: #009cd3;
+  cursor: pointer;
+}
+
+#contact .form .required:after {
+  content: "*";
+  color: #ff0000;
+}
+
+#contact .form .attention {
+  margin: 20px 0 0 165px;
+}
+
+
+
+
+
+
+
+
+
